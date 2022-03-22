@@ -1,0 +1,1128 @@
+fileFormatVersion: 2
+guid: 9029f5a76f6327d46bbfa03707cc11a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2940676380738626028
+    second: FF6_iOS_Shadow_Sprites_0
+  - first:
+      213: 1737331449740375568
+    second: FF6_iOS_Shadow_Sprites_1
+  - first:
+      213: 4165579983575076258
+    second: FF6_iOS_Shadow_Sprites_2
+  - first:
+      213: 5093315990327373620
+    second: FF6_iOS_Shadow_Sprites_3
+  - first:
+      213: 3891152121012589463
+    second: FF6_iOS_Shadow_Sprites_4
+  - first:
+      213: -5707165359112911827
+    second: FF6_iOS_Shadow_Sprites_5
+  - first:
+      213: -9143251782961644911
+    second: FF6_iOS_Shadow_Sprites_6
+  - first:
+      213: 2005163934836615146
+    second: FF6_iOS_Shadow_Sprites_7
+  - first:
+      213: -6392801854439352888
+    second: FF6_iOS_Shadow_Sprites_8
+  - first:
+      213: 2144200037979317865
+    second: FF6_iOS_Shadow_Sprites_9
+  - first:
+      213: -7701607197938744359
+    second: FF6_iOS_Shadow_Sprites_10
+  - first:
+      213: -1016378936752593529
+    second: FF6_iOS_Shadow_Sprites_11
+  - first:
+      213: -8807008946251421545
+    second: FF6_iOS_Shadow_Sprites_12
+  - first:
+      213: -2725487528044401554
+    second: FF6_iOS_Shadow_Sprites_13
+  - first:
+      213: 2604384321410663313
+    second: FF6_iOS_Shadow_Sprites_14
+  - first:
+      213: -4648645181134138709
+    second: FF6_iOS_Shadow_Sprites_15
+  - first:
+      213: -8704864753243140515
+    second: FF6_iOS_Shadow_Sprites_16
+  - first:
+      213: 5586783594538450377
+    second: FF6_iOS_Shadow_Sprites_17
+  - first:
+      213: -4452761563248510628
+    second: FF6_iOS_Shadow_Sprites_18
+  - first:
+      213: -5895191494452066822
+    second: FF6_iOS_Shadow_Sprites_19
+  - first:
+      213: 3611543793502837614
+    second: FF6_iOS_Shadow_Sprites_20
+  - first:
+      213: -3938606718917302441
+    second: FF6_iOS_Shadow_Sprites_21
+  - first:
+      213: 1046745607946674317
+    second: FF6_iOS_Shadow_Sprites_22
+  - first:
+      213: 5886081790045161188
+    second: FF6_iOS_Shadow_Sprites_23
+  - first:
+      213: 1076389068161409394
+    second: FF6_iOS_Shadow_Sprites_24
+  - first:
+      213: 6149304247423272351
+    second: FF6_iOS_Shadow_Sprites_25
+  - first:
+      213: 5614355471759139342
+    second: FF6_iOS_Shadow_Sprites_26
+  - first:
+      213: 556601653896851350
+    second: FF6_iOS_Shadow_Sprites_27
+  - first:
+      213: 2338485160914501157
+    second: FF6_iOS_Shadow_Sprites_28
+  - first:
+      213: 759612356923666443
+    second: FF6_iOS_Shadow_Sprites_29
+  - first:
+      213: 5638699302737817592
+    second: FF6_iOS_Shadow_Sprites_30
+  - first:
+      213: 199588952182791939
+    second: FF6_iOS_Shadow_Sprites_31
+  - first:
+      213: 2946802776473158491
+    second: FF6_iOS_Shadow_Sprites_32
+  - first:
+      213: 6202122512390170418
+    second: FF6_iOS_Shadow_Sprites_33
+  - first:
+      213: 4905494073826128222
+    second: FF6_iOS_Shadow_Sprites_34
+  - first:
+      213: 1921291788198840140
+    second: FF6_iOS_Shadow_Sprites_35
+  - first:
+      213: -9191462346000716497
+    second: FF6_iOS_Shadow_Sprites_36
+  - first:
+      213: 7071116288022884008
+    second: FF6_iOS_Shadow_Sprites_37
+  - first:
+      213: -2552394917440250533
+    second: FF6_iOS_Shadow_Sprites_38
+  - first:
+      213: -7701321242051546944
+    second: FF6_iOS_Shadow_Sprites_39
+  - first:
+      213: 796785075978410829
+    second: FF6_iOS_Shadow_Sprites_40
+  - first:
+      213: 451678614397903609
+    second: FF6_iOS_Shadow_Sprites_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1ae4186916fc820800000000000000
+      internalID: 2940676380738626028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 193
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016b3eeafbd3c1810800000000000000
+      internalID: 1737331449740375568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad4874ccec1fc930800000000000000
+      internalID: 4165579983575076258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 192
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fa74c58e71fa640800000000000000
+      internalID: 5093315990327373620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 193
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79396f3ec36200630800000000000000
+      internalID: 3891152121012589463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 192
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2409aff7531cc0b0800000000000000
+      internalID: -5707165359112911827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 193
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a3d9842f4ac1180800000000000000
+      internalID: -9143251782961644911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 193
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae76c5499f5c3db10800000000000000
+      internalID: 2005163934836615146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 193
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c51faa75943847a0800000000000000
+      internalID: -6392801854439352888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 193
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966e227f29ab1cd10800000000000000
+      internalID: 2144200037979317865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3054fee056e1590800000000000000
+      internalID: -7701607197938744359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 147
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7852ca5fdb815e1f0800000000000000
+      internalID: -1016378936752593529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 145
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7982ff0660837c580800000000000000
+      internalID: -8807008946251421545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 145
+        width: 31
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ce723988f1d2ad0800000000000000
+      internalID: -2725487528044401554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 145
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1938740edb1a42420800000000000000
+      internalID: 2604384321410663313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 145
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba21bab56d1bc7fb0800000000000000
+      internalID: -4648645181134138709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 144
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ecf1590ab123780800000000000000
+      internalID: -8704864753243140515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 144
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdb175441e388d40800000000000000
+      internalID: 5586783594538450377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 145
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c593f0133fc9432c0800000000000000
+      internalID: -4452761563248510628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 145
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5c742e192103ea0800000000000000
+      internalID: -5895191494452066822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 97
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bd08602f7ce1230800000000000000
+      internalID: 3611543793502837614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 97
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757a7f88e024759c0800000000000000
+      internalID: -3938606718917302441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 97
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80acd3a599c68e00800000000000000
+      internalID: 1046745607946674317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 96
+        width: 45
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e68986c3309fa150800000000000000
+      internalID: 5886081790045161188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 97
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271efdf872a10fe00800000000000000
+      internalID: 1076389068161409394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 97
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f950773f1a7b65550800000000000000
+      internalID: 6149304247423272351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 96
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0269f03e823aed40800000000000000
+      internalID: 5614355471759139342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69faae5514279b700800000000000000
+      internalID: 556601653896851350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 97
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eb4d03dd7f37020800000000000000
+      internalID: 2338485160914501157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 97
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00be6df96faa8a00800000000000000
+      internalID: 759612356923666443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 49
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff2ee6042fa04e40800000000000000
+      internalID: 5638699302737817592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 49
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f92f3381515c200800000000000000
+      internalID: 199588952182791939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_32
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 49
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5341da238525e820800000000000000
+      internalID: 2946802776473158491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 49
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2372874909d521650800000000000000
+      internalID: 6202122512390170418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_34
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 49
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51b036aed0d31440800000000000000
+      internalID: 4905494073826128222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_35
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 49
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c478771b3bcc9aa10800000000000000
+      internalID: 1921291788198840140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_36
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 49
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2daf3cd1bd517080800000000000000
+      internalID: -9191462346000716497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 49
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae2511bcc6a12260800000000000000
+      internalID: 7071116288022884008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_38
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 49
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d16738852149cd0800000000000000
+      internalID: -2552394917440250533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_39
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 50
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0f85a32296f1590800000000000000
+      internalID: -7701321242051546944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b96081ecfbe0b00800000000000000
+      internalID: 796785075978410829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Shadow_Sprites_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2e3d38e4fa44600800000000000000
+      internalID: 451678614397903609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

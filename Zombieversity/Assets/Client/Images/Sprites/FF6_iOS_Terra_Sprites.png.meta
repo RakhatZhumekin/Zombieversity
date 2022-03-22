@@ -1,0 +1,1128 @@
+fileFormatVersion: 2
+guid: a7a01c8244216a74aadbb759633322fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3268930508968650229
+    second: FF6_iOS_Terra_Sprites_0
+  - first:
+      213: -7166367488435077877
+    second: FF6_iOS_Terra_Sprites_1
+  - first:
+      213: 6686143478391525834
+    second: FF6_iOS_Terra_Sprites_2
+  - first:
+      213: 6593914572771574122
+    second: FF6_iOS_Terra_Sprites_3
+  - first:
+      213: -1281624943152419841
+    second: FF6_iOS_Terra_Sprites_4
+  - first:
+      213: 494830622436946223
+    second: FF6_iOS_Terra_Sprites_5
+  - first:
+      213: 6642570873531784306
+    second: FF6_iOS_Terra_Sprites_6
+  - first:
+      213: -4283024710210098612
+    second: FF6_iOS_Terra_Sprites_7
+  - first:
+      213: 5356530023201723991
+    second: FF6_iOS_Terra_Sprites_8
+  - first:
+      213: 2876227539076818730
+    second: FF6_iOS_Terra_Sprites_9
+  - first:
+      213: 7183455109986563357
+    second: FF6_iOS_Terra_Sprites_10
+  - first:
+      213: 3859848776833845772
+    second: FF6_iOS_Terra_Sprites_11
+  - first:
+      213: -6343068390782373227
+    second: FF6_iOS_Terra_Sprites_12
+  - first:
+      213: -5933216327460181076
+    second: FF6_iOS_Terra_Sprites_13
+  - first:
+      213: -2471750793574816666
+    second: FF6_iOS_Terra_Sprites_14
+  - first:
+      213: -8024872461644373103
+    second: FF6_iOS_Terra_Sprites_15
+  - first:
+      213: 7921214877776751959
+    second: FF6_iOS_Terra_Sprites_16
+  - first:
+      213: 8434164776374838524
+    second: FF6_iOS_Terra_Sprites_17
+  - first:
+      213: -6455685628233209559
+    second: FF6_iOS_Terra_Sprites_18
+  - first:
+      213: -4794243184089556498
+    second: FF6_iOS_Terra_Sprites_19
+  - first:
+      213: -5374341717319240723
+    second: FF6_iOS_Terra_Sprites_20
+  - first:
+      213: 3969305970397957565
+    second: FF6_iOS_Terra_Sprites_21
+  - first:
+      213: 358767580334695645
+    second: FF6_iOS_Terra_Sprites_22
+  - first:
+      213: 651963195096235035
+    second: FF6_iOS_Terra_Sprites_23
+  - first:
+      213: 6272362141984326284
+    second: FF6_iOS_Terra_Sprites_24
+  - first:
+      213: -5010273706500144560
+    second: FF6_iOS_Terra_Sprites_25
+  - first:
+      213: -806688542903783549
+    second: FF6_iOS_Terra_Sprites_26
+  - first:
+      213: 3764884848315363968
+    second: FF6_iOS_Terra_Sprites_27
+  - first:
+      213: 6481525515032083121
+    second: FF6_iOS_Terra_Sprites_28
+  - first:
+      213: -9024937264652470856
+    second: FF6_iOS_Terra_Sprites_29
+  - first:
+      213: -7298803030651945540
+    second: FF6_iOS_Terra_Sprites_30
+  - first:
+      213: 991529728635418949
+    second: FF6_iOS_Terra_Sprites_31
+  - first:
+      213: 8341386768887238131
+    second: FF6_iOS_Terra_Sprites_32
+  - first:
+      213: -8390955909258962544
+    second: FF6_iOS_Terra_Sprites_33
+  - first:
+      213: -825214372584840410
+    second: FF6_iOS_Terra_Sprites_34
+  - first:
+      213: 1508361605325134050
+    second: FF6_iOS_Terra_Sprites_35
+  - first:
+      213: -1239267594244103613
+    second: FF6_iOS_Terra_Sprites_36
+  - first:
+      213: -3703212277615573193
+    second: FF6_iOS_Terra_Sprites_37
+  - first:
+      213: -4757314321845749512
+    second: FF6_iOS_Terra_Sprites_38
+  - first:
+      213: -7524405023580826930
+    second: FF6_iOS_Terra_Sprites_39
+  - first:
+      213: -2020535704982948121
+    second: FF6_iOS_Terra_Sprites_40
+  - first:
+      213: -7722321465017702373
+    second: FF6_iOS_Terra_Sprites_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f563867af29d5d20800000000000000
+      internalID: 3268930508968650229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 193
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d3be10db2fb8c90800000000000000
+      internalID: -7166367488435077877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac152d2a114f9cc50800000000000000
+      internalID: 6686143478391525834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 192
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61425d2e5a428b50800000000000000
+      internalID: 6593914572771574122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 193
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbae1097e0c63ee0800000000000000
+      internalID: -1281624943152419841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 192
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21f65254ddfdd600800000000000000
+      internalID: 494830622436946223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 192
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27cd73004072f2c50800000000000000
+      internalID: 6642570873531784306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 192
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ae4bfe7b3af84c0800000000000000
+      internalID: -4283024710210098612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 192
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75657ad0da7365a40800000000000000
+      internalID: 5356530023201723991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 192
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27aed735b96ae720800000000000000
+      internalID: 2876227539076818730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 144
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15b6baec52c0b360800000000000000
+      internalID: 7183455109986563357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 145
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a48ed1300f09530800000000000000
+      internalID: 3859848776833845772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 144
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5927865d7e4e8f7a0800000000000000
+      internalID: -6343068390782373227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 144
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab203a8f2bf8ada0800000000000000
+      internalID: -5933216327460181076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 144
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664eea7cfb392bdd0800000000000000
+      internalID: -2471750793574816666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 145
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1936fd3830de1a090800000000000000
+      internalID: -8024872461644373103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 145
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d2c6386fecded60800000000000000
+      internalID: 7921214877776751959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 145
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf42fe09d2c2c0570800000000000000
+      internalID: 8434164776374838524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 145
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929a093ff1cc866a0800000000000000
+      internalID: -6455685628233209559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 145
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9118d993d677db0800000000000000
+      internalID: -4794243184089556498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 97
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3bf9dbea08a65b0800000000000000
+      internalID: -5374341717319240723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 97
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd4862ffbec51730800000000000000
+      internalID: 3969305970397957565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 97
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4a6c6a6399af400800000000000000
+      internalID: 358767580334695645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 97
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cf65a521d3c0900800000000000000
+      internalID: 651963195096235035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 97
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82859fb228eb0750800000000000000
+      internalID: 6272362141984326284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 97
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05244980c9ee77ab0800000000000000
+      internalID: -5010273706500144560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 97
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fa7d35b011ec4f0800000000000000
+      internalID: -806688542903783549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 98
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082761482de8f3430800000000000000
+      internalID: 3764884848315363968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 97
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba3e168d1103f950800000000000000
+      internalID: 6481525515032083121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 97
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5343cbf5bf0c280800000000000000
+      internalID: -9024937264652470856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 49
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd3278705175ba90800000000000000
+      internalID: -7298803030651945540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 49
+        width: 24
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549bd8be80f92cd00800000000000000
+      internalID: 991529728635418949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_32
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 49
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdcaad521f82c370800000000000000
+      internalID: 8341386768887238131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 48
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09997a6ce065d8b80800000000000000
+      internalID: -8390955909258962544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_34
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 49
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623a88a76ef3c84f0800000000000000
+      internalID: -825214372584840410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_35
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 48
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e81e3e63e6cee410800000000000000
+      internalID: 1508361605325134050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_36
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 49
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3426d6f50bc3dcee0800000000000000
+      internalID: -1239267594244103613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 49
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737cbd0dd0c8b9cc0800000000000000
+      internalID: -3703212277615573193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_38
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 49
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8718164df9afdb0800000000000000
+      internalID: -4757314321845749512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_39
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 50
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2dc4f3f71f39790800000000000000
+      internalID: -7524405023580826930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e67f784b7d95f3e0800000000000000
+      internalID: -2020535704982948121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FF6_iOS_Terra_Sprites_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18ee3cca8dc4d490800000000000000
+      internalID: -7722321465017702373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
