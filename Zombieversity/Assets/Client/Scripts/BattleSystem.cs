@@ -10,6 +10,8 @@ public class BattleSystem : MonoBehaviour
     public GameObject PlayerPrefab;
     public GameObject EnemyPrefab;
     public GameObject ActionPanel;
+    public GameObject ActionHUD;
+    public GameObject SpAtkHUD;
 
     private GameObject PlayerGO;
     private GameObject EnemyGO;
@@ -60,9 +62,30 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(PlayerAttack());
     }
 
+    public void OnSpecialButton() {
+        if (State != BattleState.PLAYERTURN)
+            return;
+
+        ActionHUD.SetActive(false);
+        SpAtkHUD.SetActive(true);
+    }
+
+    public void OnBackButton() {
+        ActionHUD.SetActive(true);
+        SpAtkHUD.SetActive(false);
+    }
+
+    public void OnGuardButton() {
+        ActionText.text = "Guard";
+        StartCoroutine(PlayerGuard());
+    }
+
     private IEnumerator PlayerAttack() {
         ActionText.text = "Attack";
-        bool isDead = EnemyUnit.TakeDamage(PlayerUnit.Damage);
+
+        yield return new WaitForSeconds(2f);
+
+        bool isDead = EnemyUnit.TakeDamage(PlayerUnit.Damage - EnemyUnit.Defence);
 
         EnemyHUD.SetHP(EnemyUnit.CurrentHP);
 
@@ -79,13 +102,29 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
+    private IEnumerator PlayerGuard() {
+        int prevDefence = PlayerUnit.Defence;
+        PlayerUnit.Defence += 5;
+
+        EnemyHUD.SetHP(EnemyUnit.CurrentHP);
+
+        State = BattleState.ENEMYTURN;
+
+        yield return new WaitForSeconds(2f);
+
+        StartCoroutine(EnemyTurn());
+
+        yield return new WaitForSeconds(4f);
+        PlayerUnit.Defence = prevDefence;
+    }
+
     private IEnumerator EnemyTurn() {
         ActionText.text = "Enemy Turn!";
         yield return new WaitForSeconds(3f);
 
         ActionText.text = "Enemy Attack!";
 
-        bool isDead = PlayerUnit.TakeDamage(EnemyUnit.Damage);
+        bool isDead = PlayerUnit.TakeDamage(EnemyUnit.Damage - PlayerUnit.Defence);
 
         PlayerHUD.SetHP(PlayerUnit.CurrentHP);
 

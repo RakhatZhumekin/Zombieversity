@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitName: Shadow
   UnitLevel: 4
-  Damage: 5
+  Damage: 10
   MaxHP: 50
   CurrentHP: 50
+  Defence: 0
