@@ -14,6 +14,11 @@ public class Unit : MonoBehaviour
 
     public int Defence;
 
+    public int FireResistance;
+    public int IceResistance;
+    public int WaterResistance;
+    public int ElectricResistance;
+
     public bool TakeDamage(int damage) {
         CurrentHP -= damage;
 

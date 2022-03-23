@@ -101,3 +101,7 @@ MonoBehaviour:
   MaxHP: 50
   CurrentHP: 50
   Defence: 0
+  FireResistance: 5
+  IceResistance: 0
+  WaterResistance: 0
+  ElectricResistance: 0
