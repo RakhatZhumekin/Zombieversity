@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3036191339627329509}
   - component: {fileID: 3036191339627329508}
-  - component: {fileID: 2333412747708298326}
+  - component: {fileID: 6912746249838972415}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player(Battle)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2333412747708298326
+--- !u!114 &6912746249838972415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,16 +92,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3036191339627329511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c59f448120f6042b267f4987ff4ee9, type: 3}
+  m_Script: {fileID: 11500000, guid: 429915c99edec6949894e8ccee46f9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UnitName: Omar
-  UnitLevel: 5
-  Damage: 10
+  UnitLevel: 0
+  PhysDamage: 5
   MaxHP: 100
-  CurrentHP: 100
-  Defence: 0
+  CurrentHP: 0
+  Defence: 5
   FireResistance: 0
   IceResistance: 0
   WaterResistance: 0
   ElectricResistance: 0
+  FireDamage: 10
+  IceDamage: 20
+  WaterDamage: 8
+  ElecDamage: 9

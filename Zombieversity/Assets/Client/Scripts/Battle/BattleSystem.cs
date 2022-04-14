@@ -20,10 +20,16 @@ public class BattleSystem : MonoBehaviour
 
     public BattleHUD PlayerHUD;
     public BattleHUD EnemyHUD;
+    public MoveHUD MoveHUD;
+
+    public Button FireButton;
+    public Button IceButton;
+    public Button WaterButton;
+    public Button ElecButton;
 
     public BattleState State;
 
-    private Unit PlayerUnit;
+    private Player PlayerUnit;
     private Unit EnemyUnit;
 
     private void Start()
@@ -32,10 +38,18 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
+    private void Update()
+    {
+        FireButton.enabled = Player.fireUsage == 0 ? false : true;
+        IceButton.enabled = Player.iceUsage == 0 ? false : true;
+        WaterButton.enabled = Player.waterUsage == 0 ? false : true;
+        ElecButton.enabled = Player.elecUsage == 0 ? false : true;
+    }
+
     private IEnumerator SetupBattle() {
         PlayerGO = Instantiate(PlayerPrefab, PlayerPrefab.transform.position, 
                 PlayerPrefab.transform.rotation);
-        PlayerUnit = PlayerGO.GetComponent<Unit>();
+        PlayerUnit = PlayerGO.GetComponent<Player>();
 
         EnemyGO = Instantiate(EnemyPrefab, EnemyPrefab.transform.position, 
                 EnemyPrefab.transform.rotation);
@@ -59,7 +73,7 @@ public class BattleSystem : MonoBehaviour
         if (State != BattleState.PLAYERTURN)
             return;
 
-        StartCoroutine(PlayerAttack("Attack", PlayerUnit.Damage - EnemyUnit.Defence));
+        StartCoroutine(PlayerAttack("Attack", PlayerUnit.PhysDamage));
     }
 
     public void OnSpecialButton() {
@@ -80,37 +94,8 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(PlayerGuard());
     }
 
-    public void OnElementalButton(string elemental) {
-        int damage = PlayerUnit.Damage - EnemyUnit.Defence;
-        string attackText = "";
-
-        switch (elemental.ToLower()) {
-            case "fire": {
-                damage -= EnemyUnit.FireResistance;
-                attackText = "Fire!"; 
-                break;
-            }
-            case "ice": {
-                damage -= EnemyUnit.IceResistance;
-                attackText = "Ice!"; 
-                break;
-            }
-            case "water": {
-                damage -= EnemyUnit.WaterResistance; 
-                attackText = "Water!";
-                break;
-            }
-            case "elec": {
-                damage -= EnemyUnit.ElectricResistance; 
-                attackText = "Electricity!";
-                break;
-            }
-        }
-
-        if (damage < 0) 
-            damage = 0;
-
-        StartCoroutine(PlayerAttack(attackText, damage));
+    public void OnElementalButton(string element) {
+        StartCoroutine(PlayerElementalAttack(element));
     }
 
     private IEnumerator PlayerAttack(string attackType, int damage) {
@@ -119,6 +104,72 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         bool isDead = EnemyUnit.TakeDamage(damage);
+
+        EnemyHUD.SetHP(EnemyUnit.CurrentHP);
+
+        State = BattleState.ENEMYTURN;
+
+        yield return new WaitForSeconds(2f);
+
+        if (isDead) {
+            State = BattleState.WON;
+            EndBattle();
+        }
+        else {
+            StartCoroutine(EnemyTurn());
+        }
+    }
+
+    private IEnumerator PlayerElementalAttack(string element) {
+        bool isDead = false;
+        switch (element.ToLower()) {
+            case "fire": {
+                ActionText.text = "Fire!";
+
+                yield return new WaitForSeconds(2f);
+
+                isDead = EnemyUnit.TakeFireDamage(PlayerUnit.FireDamage);
+
+                Player.fireUsage -= 1;
+                MoveHUD.FireCurrentUsage.text = Player.fireUsage + "/";
+
+                break;
+            }
+            case "ice": {
+                ActionText.text = "Ice!";
+
+                yield return new WaitForSeconds(2f);
+
+                isDead = EnemyUnit.TakeIceDamage(PlayerUnit.IceDamage);
+
+                Player.iceUsage -= 1;
+                MoveHUD.IceCurrentUsage.text = Player.iceUsage + "/";
+
+                break;
+            }
+            case "water": {
+                ActionText.text = "Water!";
+
+                yield return new WaitForSeconds(2f);
+
+                Player.waterUsage -= 1;
+                MoveHUD.WaterCurrentUsage.text = Player.waterUsage + "/";
+
+                isDead = EnemyUnit.TakeWaterDamage(PlayerUnit.WaterDamage);
+                break;
+            }
+            case "elec": {
+                ActionText.text = "Electricity!";
+
+                yield return new WaitForSeconds(2f);
+
+                Player.elecUsage -= 1;
+                MoveHUD.ElecCurrentUsage.text = Player.elecUsage + "/";
+
+                isDead = EnemyUnit.TakeElecDamage(PlayerUnit.ElecDamage);
+                break;
+            }
+        }
 
         EnemyHUD.SetHP(EnemyUnit.CurrentHP);
 
@@ -159,7 +210,7 @@ public class BattleSystem : MonoBehaviour
 
         ActionText.text = "Enemy Attack!";
 
-        bool isDead = PlayerUnit.TakeDamage(EnemyUnit.Damage - PlayerUnit.Defence);
+        bool isDead = PlayerUnit.TakeDamage(EnemyUnit.PhysDamage);
 
         PlayerHUD.SetHP(PlayerUnit.CurrentHP);
 

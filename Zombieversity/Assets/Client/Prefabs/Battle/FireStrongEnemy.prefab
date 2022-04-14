@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9147279321798819684}
   - component: {fileID: 3800471815077431950}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: FireWeakEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitName: Zombie
   UnitLevel: 1
-  Damage: 10
+  PhysDamage: 10
   MaxHP: 50
   CurrentHP: 50
   Defence: 0

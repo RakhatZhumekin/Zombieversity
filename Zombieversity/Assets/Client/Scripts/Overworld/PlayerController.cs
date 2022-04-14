@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     public bool isMoving;
@@ -23,10 +23,9 @@ public class PlayerMovement : MonoBehaviour
 
             if (input.x != 0) input.y = 0;
 
-            animator.SetFloat("moveX", input.x);
-            animator.SetFloat("moveY", input.y);
-
             if (input != Vector2.zero) {
+                animator.SetFloat("moveX", input.x);
+                animator.SetFloat("moveY", input.y);
                 isMoving = true;
             }
         }
