@@ -7,6 +7,8 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
 
 public class BattleSystem : MonoBehaviour
 {
+    public SceneLoader sceneLoader;
+
     public GameObject PlayerPrefab;
     public GameObject EnemyPrefab;
     public GameObject ActionPanel;
@@ -230,9 +232,12 @@ public class BattleSystem : MonoBehaviour
         if (State == BattleState.WON) {
             Destroy(EnemyGO);
             ActionText.text = "Victory!";
+            StaticStats.DestroyZombie = true;
+            sceneLoader.LoadOverworld();
         }
         else if (State == BattleState.LOST) {
             Destroy(PlayerGO);
+            StaticStats.PlayerPosition = new Vector3(0f, -3f, 0f);
             ActionText.text = "You ded";
         }
     }

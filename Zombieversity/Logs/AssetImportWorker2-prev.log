@@ -897,3 +897,4 @@ Received Import Request.
 Start importing Assets/Client/Images/Sprites/Road or Nature/Walkway using Guid(992490b78df37584aacc5fe296f3bbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae3e89d04fbfa4252a3ea5fb746e3e9') in 0.010334 seconds
   Import took 0.017096 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

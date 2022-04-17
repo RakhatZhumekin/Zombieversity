@@ -8,10 +8,12 @@ public class PlayerController : MonoBehaviour
 
     public bool isMoving;
     private Vector2 input;
+    public SceneLoader sceneLoader;
 
     private Animator animator;
 
     private void Awake() {
+        transform.position = StaticStats.PlayerPosition;
         animator = GetComponent<Animator>();
     }
 
@@ -37,5 +39,11 @@ public class PlayerController : MonoBehaviour
             transform.DOMove(endPoint, 0.5f);
             isMoving = false;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        StaticStats.PlayerPosition = transform.position;
+        sceneLoader.LoadBattle();
     }
 }
