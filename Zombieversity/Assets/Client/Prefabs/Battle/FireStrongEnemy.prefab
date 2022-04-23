@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9147279321798819684}
   - component: {fileID: 3800471815077431950}
   m_Layer: 0
-  m_Name: FireWeakEnemy
+  m_Name: FireStrongEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitName: Zombie
-  UnitLevel: 1
+  UnitDescription: 'Zombie. Damage: 10, Max HP: 50, Defence: 0. Has a higher resistance
+    against fire.'
   PhysDamage: 10
   MaxHP: 50
   CurrentHP: 50

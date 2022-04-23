@@ -14,7 +14,7 @@ public class Player : Unit
     public static int waterUsage = maxWaterUsage;
 
     public const int maxElecUsage = 20;
-    public static int elecUsage = 0;
+    public static int elecUsage = maxElecUsage;
 
     public int FireDamage;
     public int IceDamage;

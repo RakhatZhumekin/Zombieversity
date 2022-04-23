@@ -14,15 +14,19 @@ public class BattleSystem : MonoBehaviour
     public GameObject ActionPanel;
     public GameObject ActionHUD;
     public GameObject SpAtkHUD;
+    public GameObject AnalyzePanel;
 
     private GameObject PlayerGO;
     private GameObject EnemyGO;
 
     public Text ActionText;
+    public Text AnalyzeText;
 
     public BattleHUD PlayerHUD;
     public BattleHUD EnemyHUD;
     public MoveHUD MoveHUD;
+
+    public Button[] ActionHUDButtons;
 
     public Button FireButton;
     public Button IceButton;
@@ -91,6 +95,10 @@ public class BattleSystem : MonoBehaviour
         SpAtkHUD.SetActive(false);
     }
 
+    public void OnAnalyzeButton() {
+        StartCoroutine(Analyze());
+    }
+
     public void OnGuardButton() {
         ActionText.text = "Guard";
         StartCoroutine(PlayerGuard());
@@ -98,6 +106,28 @@ public class BattleSystem : MonoBehaviour
 
     public void OnElementalButton(string element) {
         StartCoroutine(PlayerElementalAttack(element));
+    }
+
+    private IEnumerator Analyze() {
+        ActionText.text = "Analyzing";
+
+        AnalyzeText.text = EnemyUnit.UnitDescription;
+        AnalyzePanel.SetActive(true);
+
+        foreach (Button btn in ActionHUDButtons)
+        {
+            btn.enabled = false;
+        }
+
+        yield return new WaitForSeconds(5f);
+
+        AnalyzePanel.SetActive(false);
+        ActionText.text = "Choose an action!";
+
+        foreach (Button btn in ActionHUDButtons)
+        {
+            btn.enabled = true;
+        }
     }
 
     private IEnumerator PlayerAttack(string attackType, int damage) {

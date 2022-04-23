@@ -5,7 +5,7 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     public string UnitName;
-    public int UnitLevel;
+    public string UnitDescription;
 
     public int PhysDamage;
 
