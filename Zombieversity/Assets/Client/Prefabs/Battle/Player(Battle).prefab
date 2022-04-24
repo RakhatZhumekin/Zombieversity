@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UnitName: Omar
-  UnitLevel: 0
+  UnitDescription: 
   PhysDamage: 5
   MaxHP: 100
   CurrentHP: 0

@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         StaticStats.PlayerPosition = transform.position;
+
+        StaticStats.ZombieNames.Add(other.gameObject.name);
+
         sceneLoader.LoadBattle();
     }
 }
