@@ -14,7 +14,12 @@ public class SceneLoader : MonoBehaviour
     }
 
     public void LoadOverworld() {
-        StartCoroutine(LoadLevel(0));
+        if (StaticStats.isInside) {
+            StartCoroutine(LoadLevel(2));
+        }
+        else {
+            StartCoroutine(LoadLevel(0));
+        }
     }
 
     private IEnumerator LoadLevel(int levelIndex) {

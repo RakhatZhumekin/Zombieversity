@@ -8,6 +8,7 @@ public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
 public class BattleSystem : MonoBehaviour
 {
     public SceneLoader sceneLoader;
+    public BattleManager battleManager;
 
     public GameObject PlayerPrefab;
     public GameObject EnemyPrefab;
@@ -27,6 +28,9 @@ public class BattleSystem : MonoBehaviour
     public MoveHUD MoveHUD;
 
     public Button[] ActionHUDButtons;
+    public GameObject[] EnemyGOs;
+    public Unit[] EnemyUnits;
+    public BattleHUD[] EnemyHUDs;
 
     public Button FireButton;
     public Button IceButton;
@@ -41,6 +45,14 @@ public class BattleSystem : MonoBehaviour
     private void Start()
     {
         State = BattleState.START;
+
+        EnemyGOs = new GameObject[battleManager.numOfZombies];
+        EnemyUnits = new Unit[EnemyGOs.Length];
+
+        for (int i = 0; i < EnemyGOs.Length; i++) { 
+            EnemyHUDs[i].gameObject.SetActive(true);
+        }
+
         StartCoroutine(SetupBattle());
     }
 
@@ -57,12 +69,27 @@ public class BattleSystem : MonoBehaviour
                 PlayerPrefab.transform.rotation);
         PlayerUnit = PlayerGO.GetComponent<Player>();
 
-        EnemyGO = Instantiate(EnemyPrefab, EnemyPrefab.transform.position, 
+        for (int i = 0; i < EnemyGOs.Length; i++) {
+            GameObject enemy = Instantiate(battleManager.Zombies[battleManager.randomIndex],
+                StaticStats.EnemyPositions[i], 
                 EnemyPrefab.transform.rotation);
-        EnemyUnit = EnemyGO.GetComponent<Unit>();
+
+            EnemyGOs[i] = enemy;
+
+            EnemyUnits[i] = enemy.GetComponent<Unit>();
+        }
+
+        // EnemyGO = Instantiate(EnemyPrefab, StaticStats.EnemyPositions[0], 
+        //         EnemyPrefab.transform.rotation);
+        // EnemyUnit = EnemyGO.GetComponent<Unit>();
 
         PlayerHUD.SetHUD(PlayerUnit);
-        EnemyHUD.SetHUD(EnemyUnit);
+
+        for (int i = 0; i < EnemyGOs.Length; i++) { 
+            EnemyHUDs[i].SetHUD(EnemyUnits[i]);
+        }
+
+        // EnemyHUD.SetHUD(EnemyUnit);
 
         yield return new WaitForSeconds(2f);
 
@@ -111,7 +138,7 @@ public class BattleSystem : MonoBehaviour
     private IEnumerator Analyze() {
         ActionText.text = "Analyzing";
 
-        AnalyzeText.text = EnemyUnit.UnitDescription;
+        AnalyzeText.text = EnemyUnits[0].UnitDescription;
         AnalyzePanel.SetActive(true);
 
         foreach (Button btn in ActionHUDButtons)
@@ -135,9 +162,19 @@ public class BattleSystem : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        bool isDead = EnemyUnit.TakeDamage(damage);
+        bool isDead = false;
 
-        EnemyHUD.SetHP(EnemyUnit.CurrentHP);
+        for (int i = 0; i < EnemyGOs.Length; i++) {
+            isDead = EnemyUnits[i].TakeDamage(damage);
+        }
+
+        // bool isDead = EnemyUnit.TakeDamage(damage);
+
+        for (int i = 0; i < EnemyGOs.Length; i++) {
+            EnemyHUDs[i].SetHP(EnemyUnits[i].CurrentHP);
+        }
+
+        // EnemyHUD.SetHP(EnemyUnit.CurrentHP);
 
         State = BattleState.ENEMYTURN;
 
@@ -160,7 +197,11 @@ public class BattleSystem : MonoBehaviour
 
                 yield return new WaitForSeconds(2f);
 
-                isDead = EnemyUnit.TakeFireDamage(PlayerUnit.FireDamage);
+                for (int i = 0; i < EnemyGOs.Length; i++) {
+                    isDead = EnemyUnits[i].TakeFireDamage(PlayerUnit.FireDamage);
+                }
+
+                // isDead = EnemyUnit.TakeFireDamage(PlayerUnit.FireDamage);
 
                 Player.fireUsage -= 1;
                 MoveHUD.FireCurrentUsage.text = Player.fireUsage + "/";
@@ -172,7 +213,11 @@ public class BattleSystem : MonoBehaviour
 
                 yield return new WaitForSeconds(2f);
 
-                isDead = EnemyUnit.TakeIceDamage(PlayerUnit.IceDamage);
+                for (int i = 0; i < EnemyGOs.Length; i++) {
+                    isDead = EnemyUnits[i].TakeIceDamage(PlayerUnit.IceDamage);
+                }
+
+                // isDead = EnemyUnit.TakeIceDamage(PlayerUnit.IceDamage);
 
                 Player.iceUsage -= 1;
                 MoveHUD.IceCurrentUsage.text = Player.iceUsage + "/";
@@ -184,10 +229,15 @@ public class BattleSystem : MonoBehaviour
 
                 yield return new WaitForSeconds(2f);
 
+                for (int i = 0; i < EnemyGOs.Length; i++) {
+                    isDead = EnemyUnits[i].TakeWaterDamage(PlayerUnit.WaterDamage);
+                }
+
+                // isDead = EnemyUnit.TakeWaterDamage(PlayerUnit.WaterDamage);
+
                 Player.waterUsage -= 1;
                 MoveHUD.WaterCurrentUsage.text = Player.waterUsage + "/";
 
-                isDead = EnemyUnit.TakeWaterDamage(PlayerUnit.WaterDamage);
                 break;
             }
             case "elec": {
@@ -195,15 +245,24 @@ public class BattleSystem : MonoBehaviour
 
                 yield return new WaitForSeconds(2f);
 
+                for (int i = 0; i < EnemyGOs.Length; i++) {
+                    isDead = EnemyUnits[i].TakeElecDamage(PlayerUnit.ElecDamage);
+                }
+
+                // isDead = EnemyUnit.TakeElecDamage(PlayerUnit.ElecDamage);
+
                 Player.elecUsage -= 1;
                 MoveHUD.ElecCurrentUsage.text = Player.elecUsage + "/";
 
-                isDead = EnemyUnit.TakeElecDamage(PlayerUnit.ElecDamage);
                 break;
             }
         }
 
-        EnemyHUD.SetHP(EnemyUnit.CurrentHP);
+        for (int i = 0; i < EnemyGOs.Length; i++) {
+            EnemyHUDs[i].SetHP(EnemyUnits[i].CurrentHP);
+        }
+
+        // EnemyHUD.SetHP(EnemyUnit.CurrentHP);
 
         State = BattleState.ENEMYTURN;
 
@@ -221,8 +280,6 @@ public class BattleSystem : MonoBehaviour
     private IEnumerator PlayerGuard() {
         int prevDefence = PlayerUnit.Defence;
         PlayerUnit.Defence += 5;
-
-        EnemyHUD.SetHP(EnemyUnit.CurrentHP);
 
         State = BattleState.ENEMYTURN;
 
@@ -242,7 +299,11 @@ public class BattleSystem : MonoBehaviour
 
         ActionText.text = "Enemy Attack!";
 
-        bool isDead = PlayerUnit.TakeDamage(EnemyUnit.PhysDamage);
+        bool isDead = false;
+
+        for (int i = 0; i < EnemyGOs.Length; i++) {
+           isDead = PlayerUnit.TakeDamage(EnemyUnits[i].PhysDamage);
+        }
 
         PlayerHUD.SetHP(PlayerUnit.CurrentHP);
 

@@ -39,14 +39,27 @@ public class PlayerController : MonoBehaviour
             transform.DOMove(endPoint, 0.5f);
             isMoving = false;
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        StaticStats.PlayerPosition = transform.position;
+        if (other.gameObject.GetComponent<ZombieController>() != null) {
+            StaticStats.PlayerPosition = transform.position;
 
-        StaticStats.ZombieNames.Add(other.gameObject.name);
+            StaticStats.ZombieNames.Add(other.gameObject.name);
 
-        sceneLoader.LoadBattle();
+            sceneLoader.LoadBattle();
+        }
+        else if (other.gameObject.tag.Equals("Portal")) {
+            if (StaticStats.isInside) {
+                StaticStats.isInside = false;
+                sceneLoader.LoadOverworld();
+            }
+            else {
+                StaticStats.isInside = true;
+                sceneLoader.LoadOverworld();
+            }
+        }
     }
 }

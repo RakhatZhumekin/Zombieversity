@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Client/Scenes/Overworld.unity
+    path: Assets/Client/Scenes/Overworld-Campus.unity
     guid: 465c18f7b2846db42a7b38f282a0947e
   - enabled: 1
     path: Assets/Client/Scenes/Battle.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Client/Scenes/Overworld-Uni.unity
+    guid: 42c35194c6414b44a913234d793d51ab
   m_configObjects: {}
