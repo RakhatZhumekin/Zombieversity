@@ -18,13 +18,11 @@ public class BattleSystem : MonoBehaviour
     public GameObject AnalyzePanel;
 
     private GameObject PlayerGO;
-    private GameObject EnemyGO;
 
     public Text ActionText;
     public Text AnalyzeText;
 
     public BattleHUD PlayerHUD;
-    public BattleHUD EnemyHUD;
     public MoveHUD MoveHUD;
 
     public Button[] ActionHUDButtons;
@@ -40,7 +38,6 @@ public class BattleSystem : MonoBehaviour
     public BattleState State;
 
     private Player PlayerUnit;
-    private Unit EnemyUnit;
 
     private void Start()
     {
@@ -58,10 +55,10 @@ public class BattleSystem : MonoBehaviour
 
     private void Update()
     {
-        FireButton.enabled = Player.fireUsage == 0 ? false : true;
-        IceButton.enabled = Player.iceUsage == 0 ? false : true;
-        WaterButton.enabled = Player.waterUsage == 0 ? false : true;
-        ElecButton.enabled = Player.elecUsage == 0 ? false : true;
+        FireButton.enabled = Player.FireUsage == 0 ? false : true;
+        IceButton.enabled = Player.IceUsage == 0 ? false : true;
+        WaterButton.enabled = Player.WaterUsage == 0 ? false : true;
+        ElecButton.enabled = Player.ElecUsage == 0 ? false : true;
     }
 
     private IEnumerator SetupBattle() {
@@ -79,17 +76,11 @@ public class BattleSystem : MonoBehaviour
             EnemyUnits[i] = enemy.GetComponent<Unit>();
         }
 
-        // EnemyGO = Instantiate(EnemyPrefab, StaticStats.EnemyPositions[0], 
-        //         EnemyPrefab.transform.rotation);
-        // EnemyUnit = EnemyGO.GetComponent<Unit>();
-
         PlayerHUD.SetHUD(PlayerUnit);
 
         for (int i = 0; i < EnemyGOs.Length; i++) { 
             EnemyHUDs[i].SetHUD(EnemyUnits[i]);
         }
-
-        // EnemyHUD.SetHUD(EnemyUnit);
 
         yield return new WaitForSeconds(2f);
 
@@ -168,13 +159,9 @@ public class BattleSystem : MonoBehaviour
             isDead = EnemyUnits[i].TakeDamage(damage);
         }
 
-        // bool isDead = EnemyUnit.TakeDamage(damage);
-
         for (int i = 0; i < EnemyGOs.Length; i++) {
             EnemyHUDs[i].SetHP(EnemyUnits[i].CurrentHP);
         }
-
-        // EnemyHUD.SetHP(EnemyUnit.CurrentHP);
 
         State = BattleState.ENEMYTURN;
 
@@ -201,10 +188,8 @@ public class BattleSystem : MonoBehaviour
                     isDead = EnemyUnits[i].TakeFireDamage(PlayerUnit.FireDamage);
                 }
 
-                // isDead = EnemyUnit.TakeFireDamage(PlayerUnit.FireDamage);
-
-                Player.fireUsage -= 1;
-                MoveHUD.FireCurrentUsage.text = Player.fireUsage + "/";
+                Player.FireUsage -= 1;
+                MoveHUD.FireCurrentUsage.text = Player.FireUsage + "/";
 
                 break;
             }
@@ -217,10 +202,8 @@ public class BattleSystem : MonoBehaviour
                     isDead = EnemyUnits[i].TakeIceDamage(PlayerUnit.IceDamage);
                 }
 
-                // isDead = EnemyUnit.TakeIceDamage(PlayerUnit.IceDamage);
-
-                Player.iceUsage -= 1;
-                MoveHUD.IceCurrentUsage.text = Player.iceUsage + "/";
+                Player.IceUsage -= 1;
+                MoveHUD.IceCurrentUsage.text = Player.IceUsage + "/";
 
                 break;
             }
@@ -233,10 +216,8 @@ public class BattleSystem : MonoBehaviour
                     isDead = EnemyUnits[i].TakeWaterDamage(PlayerUnit.WaterDamage);
                 }
 
-                // isDead = EnemyUnit.TakeWaterDamage(PlayerUnit.WaterDamage);
-
-                Player.waterUsage -= 1;
-                MoveHUD.WaterCurrentUsage.text = Player.waterUsage + "/";
+                Player.WaterUsage -= 1;
+                MoveHUD.WaterCurrentUsage.text = Player.WaterUsage + "/";
 
                 break;
             }
@@ -249,10 +230,8 @@ public class BattleSystem : MonoBehaviour
                     isDead = EnemyUnits[i].TakeElecDamage(PlayerUnit.ElecDamage);
                 }
 
-                // isDead = EnemyUnit.TakeElecDamage(PlayerUnit.ElecDamage);
-
-                Player.elecUsage -= 1;
-                MoveHUD.ElecCurrentUsage.text = Player.elecUsage + "/";
+                Player.ElecUsage -= 1;
+                MoveHUD.ElecCurrentUsage.text = Player.ElecUsage + "/";
 
                 break;
             }
@@ -261,8 +240,6 @@ public class BattleSystem : MonoBehaviour
         for (int i = 0; i < EnemyGOs.Length; i++) {
             EnemyHUDs[i].SetHP(EnemyUnits[i].CurrentHP);
         }
-
-        // EnemyHUD.SetHP(EnemyUnit.CurrentHP);
 
         State = BattleState.ENEMYTURN;
 
@@ -321,7 +298,10 @@ public class BattleSystem : MonoBehaviour
 
     private void EndBattle() {
         if (State == BattleState.WON) {
-            Destroy(EnemyGO);
+            for (int i = 0; i < EnemyGOs.Length; i++) {
+                Destroy(EnemyGOs[i]);
+            }
+
             ActionText.text = "Victory!";
             sceneLoader.LoadOverworld();
         }

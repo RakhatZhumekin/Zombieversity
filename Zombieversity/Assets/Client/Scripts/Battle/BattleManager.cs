@@ -16,7 +16,7 @@ public class BattleManager : MonoBehaviour
 
         numOfZombies = Mathf.FloorToInt(Random.Range(1f, 4f));
 
-        randomIndex = Mathf.FloorToInt(Random.Range(1f, 4f));
+        randomIndex = Mathf.FloorToInt(Random.Range(0f, 4f));
 
         currentZombieType = Zombies[randomIndex];
     }

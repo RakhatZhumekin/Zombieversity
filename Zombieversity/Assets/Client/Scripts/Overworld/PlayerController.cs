@@ -61,5 +61,9 @@ public class PlayerController : MonoBehaviour
                 sceneLoader.LoadOverworld();
             }
         }
+        else if (other.gameObject.tag.Equals("Fire")) {
+            Destroy(other.gameObject);
+            Player.FireUsage = Player.MaxFireUsage;
+        }
     }
 }

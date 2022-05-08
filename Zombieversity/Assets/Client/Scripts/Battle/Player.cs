@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Player : Unit
 {
-    public const int maxFireUsage = 20;
-    public static int fireUsage = maxFireUsage;
+    public const int MaxFireUsage = 20;
+    public static int FireUsage = 1;
 
-    public const int maxIceUsage = 20;
-    public static int iceUsage = maxIceUsage;
+    public const int MaxIceUsage = 20;
+    public static int IceUsage = MaxIceUsage;
 
-    public const int maxWaterUsage = 15;
-    public static int waterUsage = maxWaterUsage;
+    public const int MaxWaterUsage = 15;
+    public static int WaterUsage = MaxWaterUsage;
 
-    public const int maxElecUsage = 20;
-    public static int elecUsage = maxElecUsage;
+    public const int MaxElecUsage = 20;
+    public static int ElecUsage = MaxElecUsage;
 
     public int FireDamage;
     public int IceDamage;

@@ -18,14 +18,14 @@ public class MoveHUD : MonoBehaviour
     public Text ElecCurrentUsage;
 
     private void Awake() {
-        FireMaxUsage.text = "" + Player.maxFireUsage;
-        IceMaxUsage.text = "" + Player.maxIceUsage;
-        WaterMaxUsage.text = "" + Player.maxWaterUsage;
-        ElecMaxUsage.text = "" + Player.maxElecUsage;
+        FireMaxUsage.text = "" + Player.MaxFireUsage;
+        IceMaxUsage.text = "" + Player.MaxIceUsage;
+        WaterMaxUsage.text = "" + Player.MaxWaterUsage;
+        ElecMaxUsage.text = "" + Player.MaxElecUsage;
 
-        FireCurrentUsage.text = Player.fireUsage + "/";
-        IceCurrentUsage.text = Player.iceUsage + "/";
-        WaterCurrentUsage.text = Player.waterUsage + "/";
-        ElecCurrentUsage.text = Player.elecUsage + "/";
+        FireCurrentUsage.text = Player.FireUsage + "/";
+        IceCurrentUsage.text = Player.IceUsage + "/";
+        WaterCurrentUsage.text = Player.WaterUsage + "/";
+        ElecCurrentUsage.text = Player.ElecUsage + "/";
     }
 }
