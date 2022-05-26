@@ -5,20 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public GameObject Player;
-
     public Animator Transition;
 
-    public void LoadBattle() {
+    public void LoadMenu() {
+        StartCoroutine(LoadLevel(0));
+    }
+
+    public void LoadNarration() {
         StartCoroutine(LoadLevel(1));
+    }
+
+    public void LoadBattle() {
+        StartCoroutine(LoadLevel(4));
+    }
+
+    public void LoadBossBattle() {
+        StartCoroutine(LoadLevel(5));
     }
 
     public void LoadOverworld() {
         if (StaticStats.isInside) {
-            StartCoroutine(LoadLevel(2));
+            StartCoroutine(LoadLevel(3));
         }
         else {
-            StartCoroutine(LoadLevel(0));
+            StartCoroutine(LoadLevel(2));
         }
     }
 

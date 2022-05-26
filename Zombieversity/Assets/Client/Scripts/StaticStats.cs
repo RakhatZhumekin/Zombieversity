@@ -12,7 +12,11 @@ public static class StaticStats
 
     public static List<string> ZombieNames = new List<string>();
 
-    // public static Vector3 CampusPlayerSpawn = new Vector3(-5.6f, -1.6f, 0f);
+    public static List<string> PickedItems = new List<string>();
 
     public static bool isInside = false;
+
+    public static int order = 0;
+
+    public static bool isPrologue = true;
 }

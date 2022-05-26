@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Client/Scenes/Main Menu.unity
+    guid: 573ee0186adcdb04c85b25a2d3e83571
+  - enabled: 1
+    path: Assets/Client/Scenes/Narration.unity
+    guid: 3392815a90f16264a8024aacd9ca0dfe
+  - enabled: 1
     path: Assets/Client/Scenes/Overworld-Campus.unity
     guid: 465c18f7b2846db42a7b38f282a0947e
+  - enabled: 1
+    path: Assets/Client/Scenes/Overworld-Uni.unity
+    guid: 42c35194c6414b44a913234d793d51ab
   - enabled: 1
     path: Assets/Client/Scenes/Battle.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Client/Scenes/Overworld-Uni.unity
-    guid: 42c35194c6414b44a913234d793d51ab
+    path: Assets/Client/Scenes/Boss Battle.unity
+    guid: bccb3e45cc649264dafd6f24db6c9385
   m_configObjects: {}

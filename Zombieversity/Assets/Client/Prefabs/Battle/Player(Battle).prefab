@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2598878511993452252, guid: ec3fbd839dd3d78439fe32325f807b18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UnitName: Omar
   UnitDescription: 
-  PhysDamage: 5
+  PhysDamage: 10
   MaxHP: 100
   CurrentHP: 0
   Defence: 5
@@ -105,7 +105,7 @@ MonoBehaviour:
   IceResistance: 0
   WaterResistance: 0
   ElectricResistance: 0
-  FireDamage: 10
-  IceDamage: 20
-  WaterDamage: 8
-  ElecDamage: 9
+  FireDamage: 15
+  IceDamage: 15
+  WaterDamage: 15
+  ElecDamage: 15

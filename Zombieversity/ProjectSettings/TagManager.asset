@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Portal
   - Fire
+  - Water
+  - Ice
+  - Elec
+  - Boss
   layers:
   - Default
   - TransparentFX

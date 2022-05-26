@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class PlayerController : MonoBehaviour
@@ -9,6 +10,9 @@ public class PlayerController : MonoBehaviour
     public bool isMoving;
     private Vector2 input;
     public SceneLoader sceneLoader;
+
+    public GameObject WarningPanel;
+    public Text WarningText;
 
     private Animator animator;
 
@@ -49,21 +53,63 @@ public class PlayerController : MonoBehaviour
 
             StaticStats.ZombieNames.Add(other.gameObject.name);
 
-            sceneLoader.LoadBattle();
-        }
-        else if (other.gameObject.tag.Equals("Portal")) {
-            if (StaticStats.isInside) {
-                StaticStats.isInside = false;
-                sceneLoader.LoadOverworld();
+            if (other.gameObject.tag.Equals("Boss")) {
+                sceneLoader.LoadBossBattle();
             }
             else {
-                StaticStats.isInside = true;
-                sceneLoader.LoadOverworld();
+                sceneLoader.LoadBattle();
             }
         }
-        else if (other.gameObject.tag.Equals("Fire")) {
-            Destroy(other.gameObject);
-            Player.FireUsage = Player.MaxFireUsage;
+        else {
+            switch (other.gameObject.tag) {
+                case "Portal": 
+                    if (StaticStats.isInside) {
+                        StaticStats.isInside = false;
+                        sceneLoader.LoadOverworld();
+                    }
+                    else {
+                        StaticStats.isInside = true;
+                        sceneLoader.LoadOverworld();
+                    }
+                    break;
+                
+                case "Fire":
+                    StaticStats.PickedItems.Add(other.name);
+                    StartCoroutine(ItemPickupWarning(other.gameObject.tag));
+                    Destroy(other.gameObject);
+                    Player.FireUsage = Player.MaxFireUsage;
+                    break;
+
+                case "Ice":
+                    StaticStats.PickedItems.Add(other.name);
+                    StartCoroutine(ItemPickupWarning(other.gameObject.tag));
+                    Destroy(other.gameObject);
+                    Player.IceUsage = Player.MaxIceUsage;
+                    break;
+
+                case "Water":
+                    StaticStats.PickedItems.Add(other.name);
+                    StartCoroutine(ItemPickupWarning(other.gameObject.tag));
+                    Destroy(other.gameObject);
+                    Player.WaterUsage = Player.MaxWaterUsage;
+                    break;
+
+                case "Elec":
+                    StaticStats.PickedItems.Add(other.name);
+                    StartCoroutine(ItemPickupWarning(other.gameObject.tag));
+                    Destroy(other.gameObject);
+                    Player.ElecUsage = Player.MaxElecUsage;
+                    break;
+            }
         }
+    }
+
+    private IEnumerator ItemPickupWarning(string element) {
+        WarningPanel.SetActive(true);
+        WarningText.text = element + " usage fully recovered!";
+
+        yield return new WaitForSeconds(1.5f);
+
+        WarningPanel.SetActive(false);
     }
 }

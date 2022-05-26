@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : Unit
 {
     public const int MaxFireUsage = 20;
-    public static int FireUsage = 1;
+    public static int FireUsage = MaxFireUsage;
 
     public const int MaxIceUsage = 20;
     public static int IceUsage = MaxIceUsage;

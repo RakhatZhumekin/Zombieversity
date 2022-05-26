@@ -35,13 +35,23 @@ public class BattleSystem : MonoBehaviour
     public Button WaterButton;
     public Button ElecButton;
 
+    public GameObject CampusBG;
+    public GameObject UniBG;
+
     public BattleState State;
 
     private Player PlayerUnit;
 
     private void Start()
     {
-        State = BattleState.START;
+        if (StaticStats.isInside) {
+            UniBG.SetActive(true);
+            CampusBG.SetActive(false);
+        }
+        else {
+            UniBG.SetActive(false);
+            CampusBG.SetActive(true);
+        }
 
         EnemyGOs = new GameObject[battleManager.numOfZombies];
         EnemyUnits = new Unit[EnemyGOs.Length];
@@ -97,7 +107,7 @@ public class BattleSystem : MonoBehaviour
         if (State != BattleState.PLAYERTURN)
             return;
 
-        StartCoroutine(PlayerAttack("Attack", PlayerUnit.PhysDamage));
+        StartCoroutine(PlayerAttack("Attack"));
     }
 
     public void OnSpecialButton() {
@@ -114,10 +124,16 @@ public class BattleSystem : MonoBehaviour
     }
 
     public void OnAnalyzeButton() {
+        if (State != BattleState.PLAYERTURN)
+            return;
+
         StartCoroutine(Analyze());
     }
 
     public void OnGuardButton() {
+        if (State != BattleState.PLAYERTURN)
+            return;
+
         ActionText.text = "Guard";
         StartCoroutine(PlayerGuard());
     }
@@ -148,22 +164,22 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    private IEnumerator PlayerAttack(string attackType, int damage) {
+    private IEnumerator PlayerAttack(string attackType) {
         ActionText.text = attackType;
+
+        State = BattleState.ENEMYTURN;
 
         yield return new WaitForSeconds(2f);
 
         bool isDead = false;
 
         for (int i = 0; i < EnemyGOs.Length; i++) {
-            isDead = EnemyUnits[i].TakeDamage(damage);
+            isDead = EnemyUnits[i].TakeDamage(PlayerUnit.PhysDamage);
         }
 
         for (int i = 0; i < EnemyGOs.Length; i++) {
             EnemyHUDs[i].SetHP(EnemyUnits[i].CurrentHP);
         }
-
-        State = BattleState.ENEMYTURN;
 
         yield return new WaitForSeconds(2f);
 
@@ -178,79 +194,84 @@ public class BattleSystem : MonoBehaviour
 
     private IEnumerator PlayerElementalAttack(string element) {
         bool isDead = false;
-        switch (element.ToLower()) {
-            case "fire": {
-                ActionText.text = "Fire!";
+        
+        if (State == BattleState.PLAYERTURN) {
+            switch (element.ToLower()) {
+                case "fire": {
+                    ActionText.text = "Fire!";
+                    State = BattleState.ENEMYTURN;
 
-                yield return new WaitForSeconds(2f);
+                    yield return new WaitForSeconds(2f);
 
-                for (int i = 0; i < EnemyGOs.Length; i++) {
-                    isDead = EnemyUnits[i].TakeFireDamage(PlayerUnit.FireDamage);
+                    for (int i = 0; i < EnemyGOs.Length; i++) {
+                        isDead = EnemyUnits[i].TakeFireDamage(PlayerUnit.FireDamage);
+                    }
+
+                    Player.FireUsage -= 1;
+                    MoveHUD.FireCurrentUsage.text = Player.FireUsage + "/";
+
+                    break;
                 }
+                case "ice": {
+                    ActionText.text = "Ice!";
+                    State = BattleState.ENEMYTURN;
 
-                Player.FireUsage -= 1;
-                MoveHUD.FireCurrentUsage.text = Player.FireUsage + "/";
+                    yield return new WaitForSeconds(2f);
 
-                break;
-            }
-            case "ice": {
-                ActionText.text = "Ice!";
+                    for (int i = 0; i < EnemyGOs.Length; i++) {
+                        isDead = EnemyUnits[i].TakeIceDamage(PlayerUnit.IceDamage);
+                    }
 
-                yield return new WaitForSeconds(2f);
+                    Player.IceUsage -= 1;
+                    MoveHUD.IceCurrentUsage.text = Player.IceUsage + "/";
 
-                for (int i = 0; i < EnemyGOs.Length; i++) {
-                    isDead = EnemyUnits[i].TakeIceDamage(PlayerUnit.IceDamage);
+                    break;
                 }
+                case "water": {
+                    ActionText.text = "Water!";
+                    State = BattleState.ENEMYTURN;
 
-                Player.IceUsage -= 1;
-                MoveHUD.IceCurrentUsage.text = Player.IceUsage + "/";
+                    yield return new WaitForSeconds(2f);
 
-                break;
-            }
-            case "water": {
-                ActionText.text = "Water!";
+                    for (int i = 0; i < EnemyGOs.Length; i++) {
+                        isDead = EnemyUnits[i].TakeWaterDamage(PlayerUnit.WaterDamage);
+                    }
 
-                yield return new WaitForSeconds(2f);
+                    Player.WaterUsage -= 1;
+                    MoveHUD.WaterCurrentUsage.text = Player.WaterUsage + "/";
 
-                for (int i = 0; i < EnemyGOs.Length; i++) {
-                    isDead = EnemyUnits[i].TakeWaterDamage(PlayerUnit.WaterDamage);
+                    break;
                 }
+                case "elec": {
+                    ActionText.text = "Electricity!";
+                    State = BattleState.ENEMYTURN;
 
-                Player.WaterUsage -= 1;
-                MoveHUD.WaterCurrentUsage.text = Player.WaterUsage + "/";
+                    yield return new WaitForSeconds(2f);
 
-                break;
-            }
-            case "elec": {
-                ActionText.text = "Electricity!";
+                    for (int i = 0; i < EnemyGOs.Length; i++) {
+                        isDead = EnemyUnits[i].TakeElecDamage(PlayerUnit.ElecDamage);
+                    }
 
-                yield return new WaitForSeconds(2f);
+                    Player.ElecUsage -= 1;
+                    MoveHUD.ElecCurrentUsage.text = Player.ElecUsage + "/";
 
-                for (int i = 0; i < EnemyGOs.Length; i++) {
-                    isDead = EnemyUnits[i].TakeElecDamage(PlayerUnit.ElecDamage);
+                    break;
                 }
-
-                Player.ElecUsage -= 1;
-                MoveHUD.ElecCurrentUsage.text = Player.ElecUsage + "/";
-
-                break;
             }
-        }
 
-        for (int i = 0; i < EnemyGOs.Length; i++) {
-            EnemyHUDs[i].SetHP(EnemyUnits[i].CurrentHP);
-        }
+            for (int i = 0; i < EnemyGOs.Length; i++) {
+                EnemyHUDs[i].SetHP(EnemyUnits[i].CurrentHP);
+            }
 
-        State = BattleState.ENEMYTURN;
+            yield return new WaitForSeconds(2f);
 
-        yield return new WaitForSeconds(2f);
-
-        if (isDead) {
-            State = BattleState.WON;
-            EndBattle();
-        }
-        else {
-            StartCoroutine(EnemyTurn());
+            if (isDead) {
+                State = BattleState.WON;
+                EndBattle();
+            }
+            else {
+                StartCoroutine(EnemyTurn());
+            }
         }
     }
 
@@ -310,6 +331,7 @@ public class BattleSystem : MonoBehaviour
             StaticStats.PlayerPosition = new Vector3(0f, -3f, 0f);
             StaticStats.ZombieNames.RemoveAt(StaticStats.ZombieNames.Count - 1);
             ActionText.text = "You ded";
+            sceneLoader.LoadOverworld();
         }
     }
 }

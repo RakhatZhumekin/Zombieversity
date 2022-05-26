@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8489074496479183433}
   - component: {fileID: -7373803653069705142}
   m_Layer: 0
-  m_Name: IceResistantZombie 1
+  m_Name: IceResistantZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 657b7a5885e45b44199ebda70660a8ae, type: 2}
   m_Color: {r: 0, g: 0.6533134, b: 1, a: 1}
   m_FlipX: 0
